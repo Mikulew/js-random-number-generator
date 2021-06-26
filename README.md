@@ -3,12 +3,17 @@
 ## Table of contents
 
 - [General info](#general-info)
+- [Demo](#demo)
 - [Technologies](#technologies)
 - [Articles](#articles)
 
 ## General info
 
 One of the most common ways programmers use the Math object is to create random numbers. Randomness is used programmatically in art, science, and gaming. Whether you’re simulating the stroke of a sable paintbrush, running a controlled medical trial, building an online casino, or encrypting anything, you need random numbers.
+
+## Demo
+
+[See an online demo](https://mikulew.github.io/js-random-number-generator/)
 
 ## Technologies
 
