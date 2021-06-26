@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.generator-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.button {
+  margin-top: 20px;
+  display: inline;
+  cursor: pointer;
+}
+
+.output-wrapper {
+  font-size: 124px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 500px;
+  border: 1px solid #000000;
+}
