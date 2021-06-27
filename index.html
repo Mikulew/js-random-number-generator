@@ -9,11 +9,22 @@
   <body>
     <div class="container">
       <div class="generator-wrapper">
-        <h1 class="title">JavaScript Random Number Generator</h1>
+        <h1 class="title">Random Number Generator</h1>
+        <div class="inputs-container">
+          <div class="input-wrapper">
+            <label for="minInput">Minimum number</label>
+            <input class="input" type="number" id="minInput" value="0" />
+          </div>
+          <div class="input-wrapper">
+            <label for="maxInput">Maximum number</label>
+            <input class="input" type="number" id="maxInput" value="100" />
+          </div>
+        </div>
         <div class="output-wrapper">
           <output></output>
         </div>
         <button class="button" type="button">Generate Random Number</button>
+        <p id="error" class="error hidden">Minimum number must be less than maximum number</p>
       </div>
     </div>
     <script src="main.js"></script>
