@@ -23,8 +23,8 @@ One of the most common ways programmers use the Math object is to create random 
 
 ## Articles
 
-* [Wikipedia: Random number generation](https://en.wikipedia.org/wiki/Random_number_generation)
-* [Stackoverflow: Generating random whole numbers in JavaScript in a specific range?](https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range)
-* [Treehouse: Math.floor( Math.random () * (max - min + 1)) + min) Explanation](https://teamtreehouse.com/community/mathfloor-mathrandom-max-min-1-min-explanation)
-* [BetterProgramming: Generating random numbers in JavaScript](https://betterprogramming.pub/generating-random-numbers-in-javascript-4b2a1e9d1806)
-* [Udacity: Creating Javascript Random Numbers with Math.random()](https://www.udacity.com/blog/2021/04/javascript-random-numbers.html)
+- [Wikipedia: Random number generation](https://en.wikipedia.org/wiki/Random_number_generation)
+- [Stackoverflow: Generating random whole numbers in JavaScript in a specific range?](https://stackoverflow.com/questions/1527803/generating-random-whole-numbers-in-javascript-in-a-specific-range)
+- [Treehouse: Math.floor( Math.random () \* (max - min + 1)) + min) Explanation](https://teamtreehouse.com/community/mathfloor-mathrandom-max-min-1-min-explanation)
+- [BetterProgramming: Generating random numbers in JavaScript](https://betterprogramming.pub/generating-random-numbers-in-javascript-4b2a1e9d1806)
+- [Udacity: Creating Javascript Random Numbers with Math.random()](https://www.udacity.com/blog/2021/04/javascript-random-numbers.html)
