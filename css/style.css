@@ -1,6 +1,31 @@
-html {
+:root {
+  --yangColor: #d8c21e;
+  --yinColor: #111111;
+  --errorColor: #D93014;
+  --focusColor: #FFE83D;
+  --borderRadius: 20px;
+  --animation: 0.3s ease;
+}
+
+body {
+  color: var(--yangColor);
   font-size: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Gemunu Libre', sans-serif;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  background-color: var(--yinColor);
+  overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+  font-size: inherit;
+  font-family: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -18,9 +43,20 @@ html {
 }
 
 .title {
+  position: relative;
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 20px;
+}
+
+.title::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  border-bottom: 1px solid var(--yangColor);
 }
 
 .inputs-container {
@@ -37,8 +73,17 @@ html {
 }
 
 .input {
+  color: var(--yangColor);
+  border: 1px solid var(--yangColor);
+  background: var(--yinColor);
   margin-top: 5px;
-  padding: 0.3em;
+  padding: 1em;
+  border-radius: var(--borderRadius);
+}
+
+.input:focus {
+  color: var(--focusColor);
+  border: 1px solid var(--focusColor);
 }
 
 .output-wrapper {
@@ -48,7 +93,8 @@ html {
   align-items: center;
   width: 250px;
   height: 300px;
-  border: 1px solid #000000;
+  border: 1px solid var(--yangColor);
+  border-radius: var(--borderRadius);
 }
 
 .button {
@@ -60,24 +106,36 @@ html {
   border: none;
   text-decoration: none;
   font-weight: 300;
-  color: #ffffff;
-  background-color: #4eb5f1;
+  color: var(--yinColor);
+  background-color: var(--yangColor);
+  border: 1px solid transparent;
   text-align: center;
-  transition: all 0.2s;
+  transition: var(--animation);
   cursor: pointer;
 }
 
 .button:hover {
-  background-color: #4095c6;
+  color: var(--yangColor);
+  background-color: var(--yinColor);
+  border: 1px solid var(--yangColor);
+}
+
+#errorText {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  text-align: center;
+  border: none;
 }
 
 .error {
-  font-size: 1.2rem;
-  color: red;
-  margin-top: 5%;
-  padding: 0 1rem;
-  text-align: center;
+  color: var(--errorColor);
 }
+
+.output-wrapper.error, input.error {
+  border: 1px solid var(--errorColor);
+}
+
 
 @media (max-width: 1024px) {
   .container {
@@ -115,10 +173,10 @@ html {
     font-size: 3rem;
     padding: 0.5em 1.5em;
     margin: 25px 0 10px 0;
-    border-radius: 2em;
+    border-radius: var(--borderRadius);
   }
 
-  .error {
+  #errorText {
     font-size: 2.5rem;
   }
 }
